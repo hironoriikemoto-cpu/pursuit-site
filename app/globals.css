@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* コーポレートサイトのためダークモードは提供せず、常にライト配色で表示する */
+body {
+  background: #ffffff;
+  color: #171717;
+}
