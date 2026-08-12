@@ -14,7 +14,9 @@ export function articleMetadata(endpoint: Endpoint, article: Article): Metadata 
       title: article.title,
       description,
       publishedTime: article.publishedAt,
-      images: article.thumbnail ? [{ url: article.thumbnail.url }] : undefined,
+      images: article.thumbnail
+        ? [{ url: article.thumbnail.url }]
+        : [{ url: "/ogp.png", width: 1200, height: 630 }],
     },
   };
 }

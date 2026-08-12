@@ -28,9 +28,11 @@ export const metadata: Metadata = {
     title: "Pursuit inc. | 価値を追求し、守る",
     description:
       "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。",
+    images: [{ url: "/ogp.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/ogp.png"],
   },
   alternates: {
     canonical: "/",
