@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getArticles, type Endpoint } from "@/lib/microcms";
+import { getArticles, toEnArticle, type Endpoint } from "@/lib/microcms";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://pursuit-dao.com";
 
@@ -10,6 +10,7 @@ const staticPaths = [
   "",
   "/concept",
   "/service",
+  "/sovereignty",
   "/web3",
   "/company",
   "/contact",
@@ -30,11 +31,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: `${siteUrl}/${endpoint}/${a.id}`,
         lastModified: new Date(a.revisedAt ?? a.publishedAt),
       });
+      // 英語版がある記事は/en側のURLも登録する
+      if (toEnArticle(a)) {
+        articleEntries.push({
+          url: `${siteUrl}/en/${endpoint}/${a.id}`,
+          lastModified: new Date(a.revisedAt ?? a.publishedAt),
+        });
+      }
     }
   }
 
   return [
     ...staticPaths.map((p) => ({
+      url: `${siteUrl}${p}`,
+      lastModified: new Date(),
+    })),
+    // 英語版の固定ページ（トップは/en）
+    ...["/en", ...staticPaths.filter((p) => p !== "").map((p) => `/en${p}`)].map((p) => ({
       url: `${siteUrl}${p}`,
       lastModified: new Date(),
     })),

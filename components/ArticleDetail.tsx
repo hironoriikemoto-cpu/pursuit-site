@@ -14,10 +14,13 @@ const sectionLabels: Record<Endpoint, string> = {
 export default function ArticleDetail({
   endpoint,
   article,
+  locale = "ja",
 }: {
   endpoint: Endpoint;
   article: Article;
+  locale?: "ja" | "en";
 }) {
+  const prefix = locale === "en" ? "/en" : "";
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -34,19 +37,20 @@ export default function ArticleDetail({
         url: `${siteUrl}/logo/pursuit_logo_horizontal_color.svg`,
       },
     },
-    mainEntityOfPage: `${siteUrl}/${endpoint}/${article.id}`,
+    mainEntityOfPage: `${siteUrl}${prefix}/${endpoint}/${article.id}`,
+    inLanguage: locale === "en" ? "en" : "ja",
   };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}${prefix || "/"}` },
       {
         "@type": "ListItem",
         position: 2,
         name: sectionLabels[endpoint],
-        item: `${siteUrl}/${endpoint}`,
+        item: `${siteUrl}${prefix}/${endpoint}`,
       },
       { "@type": "ListItem", position: 3, name: article.title },
     ],
@@ -63,12 +67,12 @@ export default function ArticleDetail({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <div className="mx-auto w-full max-w-3xl px-5 py-16 md:px-8 md:py-24">
-        <nav aria-label="パンくず" className="text-xs text-neutral-500">
-          <Link href="/" className="hover:text-neutral-900">
+        <nav aria-label={locale === "en" ? "Breadcrumb" : "パンくず"} className="text-xs text-neutral-500">
+          <Link href={prefix || "/"} className="hover:text-neutral-900">
             Home
           </Link>
           <span className="mx-2">/</span>
-          <Link href={`/${endpoint}`} className="hover:text-neutral-900">
+          <Link href={`${prefix}/${endpoint}`} className="hover:text-neutral-900">
             {sectionLabels[endpoint]}
           </Link>
         </nav>
@@ -102,10 +106,10 @@ export default function ArticleDetail({
         />
         <div className="mt-12 border-t border-neutral-200 pt-8">
           <Link
-            href={`/${endpoint}`}
+            href={`${prefix}/${endpoint}`}
             className="text-sm font-semibold text-neutral-700 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
           >
-            ← {sectionLabels[endpoint]} 一覧へ戻る
+            ← {locale === "en" ? `Back to ${sectionLabels[endpoint]}` : `${sectionLabels[endpoint]} 一覧へ戻る`}
           </Link>
         </div>
       </div>

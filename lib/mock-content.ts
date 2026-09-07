@@ -24,6 +24,11 @@ export const mockArticles: Record<Endpoint, Article[]> = {
     {
       id: "sample-rwa-value-proof",
       title: "【サンプル】RWAトークンは「正しい価値の証明」である",
+      title_en: "[Sample] An RWA token is proof of rightful value",
+      excerpt_en:
+        "Thinking of RWA tokens not as speculation, but as infrastructure that proves real-world value in an explainable form.",
+      body_en:
+        "<p>Pursuit's RWA (Real World Asset) token development is not aimed at financial speculation or price movement.</p><h2>Infrastructure for proving value</h2><p>We design it as a mechanism to record and prove real-world value — businesses, intellectual assets, rights, track records, trust — in an explainable form.</p><p>* This is a sample article shown before microCMS is connected.</p>",
       excerpt:
         "投機ではなく、現実世界の価値を説明可能な形で証明するインフラとしてのRWAトークンを考える。",
       body: "<p>Pursuitが取り組むRWA（Real World Asset）トークン開発は、金融的な投機や価格変動を目的としたものではありません。</p><h2>価値証明のインフラ</h2><p>現実世界に存在する価値――事業、知的資産、権利、実績、信用――を「なぜ価値があるのか」「どのように生まれ、積み重ねられてきたのか」を含めて記録し、説明可能な形で証明するための仕組みとして設計しています。</p><p>※これはmicroCMS接続前のサンプル記事です。</p>",

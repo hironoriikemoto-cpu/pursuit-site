@@ -7,12 +7,27 @@ export type Article = {
   title: string;
   excerpt?: string;
   body: string; // リッチエディタのHTML
+  // 英語版フィールド（未入力の記事は英語サイトに表示されない）
+  title_en?: string;
+  excerpt_en?: string;
+  body_en?: string;
   thumbnail?: { url: string; width: number; height: number };
   category?: string;
   client?: string; // works用: クライアント名
   publishedAt: string;
   revisedAt?: string;
 };
+
+// 英語フィールドを主フィールドに差し替えた記事を返す（英語版がない記事はnull）
+export function toEnArticle(a: Article): Article | null {
+  if (!a.title_en || !a.body_en) return null;
+  return {
+    ...a,
+    title: a.title_en,
+    excerpt: a.excerpt_en,
+    body: a.body_en,
+  };
+}
 
 export type Endpoint = "news" | "insights" | "works";
 

@@ -3,24 +3,37 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const navItems = [
-  { href: "/concept", label: "Concept" },
-  { href: "/service", label: "Service" },
-  { href: "/web3", label: "Web3/RWA" },
-  { href: "/works", label: "Works" },
-  { href: "/insights", label: "Insights" },
-  { href: "/news", label: "News" },
-  { href: "/company", label: "Company" },
+  { path: "/concept", label: "Concept" },
+  { path: "/service", label: "Service" },
+  { path: "/sovereignty", label: "Sovereignty" },
+  { path: "/works", label: "Works" },
+  { path: "/insights", label: "Insights" },
+  { path: "/news", label: "News" },
+  { path: "/company", label: "Company" },
 ];
 
-export default function Header() {
+export default function Header({ locale = "ja" }: { locale?: "ja" | "en" }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const prefix = locale === "en" ? "/en" : "";
+  const home = locale === "en" ? "/en" : "/";
+
+  // 現在ページの対応言語ページへ切り替える
+  const switchHref =
+    locale === "en"
+      ? pathname.replace(/^\/en/, "") || "/"
+      : pathname === "/"
+        ? "/en"
+        : `/en${pathname}`;
 
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 md:px-8">
-        <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+        <Link href={home} className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <Image
             src="/logo/pursuit_logo_horizontal_color.svg"
             alt="Pursuit inc."
@@ -32,21 +45,28 @@ export default function Header() {
         </Link>
         <nav className="hidden items-center gap-5 text-sm text-neutral-700 lg:flex">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-neutral-900">
+            <Link key={item.path} href={`${prefix}${item.path}`} className="hover:text-neutral-900">
               {item.label}
             </Link>
           ))}
         </nav>
         <div className="flex items-center gap-3">
           <Link
-            href="/contact"
+            href={switchHref}
+            className="rounded-xl border border-neutral-300 px-3 py-2 text-xs font-semibold text-neutral-700 transition hover:bg-neutral-50"
+            aria-label={locale === "ja" ? "Switch to English" : "日本語に切り替え"}
+          >
+            {locale === "ja" ? "EN" : "JP"}
+          </Link>
+          <Link
+            href={`${prefix}/contact`}
             className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
           >
             Contact
           </Link>
           <button
             type="button"
-            aria-label="メニューを開閉"
+            aria-label={locale === "ja" ? "メニューを開閉" : "Toggle menu"}
             aria-expanded={open}
             onClick={() => setOpen(!open)}
             className="flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-300 lg:hidden"
@@ -66,9 +86,9 @@ export default function Header() {
         <nav className="border-t border-neutral-200 bg-white px-5 py-4 lg:hidden">
           <ul className="space-y-1">
             {navItems.map((item) => (
-              <li key={item.href}>
+              <li key={item.path}>
                 <Link
-                  href={item.href}
+                  href={`${prefix}${item.path}`}
                   onClick={() => setOpen(false)}
                   className="block rounded-lg px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-100"
                 >

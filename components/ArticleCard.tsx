@@ -6,13 +6,16 @@ import { formatDate } from "@/lib/format";
 export default function ArticleCard({
   endpoint,
   article,
+  locale = "ja",
 }: {
   endpoint: Endpoint;
   article: Article;
+  locale?: "ja" | "en";
 }) {
+  const prefix = locale === "en" ? "/en" : "";
   return (
     <Link
-      href={`/${endpoint}/${article.id}`}
+      href={`${prefix}/${endpoint}/${article.id}`}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition hover:shadow-md"
     >
       {article.thumbnail && (

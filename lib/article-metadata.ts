@@ -3,12 +3,29 @@ import type { Article, Endpoint } from "./microcms";
 import { excerptFromHtml } from "./format";
 
 // news / insights / works の記事詳細ページ共通のメタデータ生成
-export function articleMetadata(endpoint: Endpoint, article: Article): Metadata {
+export function articleMetadata(
+  endpoint: Endpoint,
+  article: Article,
+  locale: "ja" | "en" = "ja"
+): Metadata {
   const description = article.excerpt ?? excerptFromHtml(article.body);
+  const prefix = locale === "en" ? "/en" : "";
+  // 英語版が存在する記事のみ日英を相互にhreflangで紐付ける
+  const hasEn = Boolean(article.title_en && article.body_en);
   return {
     title: article.title,
     description,
-    alternates: { canonical: `/${endpoint}/${article.id}` },
+    alternates: {
+      canonical: `${prefix}/${endpoint}/${article.id}`,
+      ...(hasEn || locale === "en"
+        ? {
+            languages: {
+              ja: `/${endpoint}/${article.id}`,
+              en: `/en/${endpoint}/${article.id}`,
+            },
+          }
+        : {}),
+    },
     openGraph: {
       type: "article",
       title: article.title,
