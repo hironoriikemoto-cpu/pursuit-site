@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 
 const footerNav = [
@@ -21,7 +21,7 @@ export default function Footer({ locale = "ja" }: { locale?: "ja" | "en" }) {
 
   return (
     <footer className="border-t border-neutral-200 bg-neutral-50">
-      <div className="mx-auto w-full max-w-6xl px-5 py-12 md:px-8">
+      <div className="mx-auto w-full max-w-6xl px-5 pb-28 pt-12 md:px-8">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div>
             <Image

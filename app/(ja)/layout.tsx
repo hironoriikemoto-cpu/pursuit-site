@@ -2,6 +2,7 @@
 import { Noto_Sans_JP } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CtaBar from "@/components/CtaBar";
 import "../globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -76,6 +77,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <CtaBar />
       </body>
     </html>
   );

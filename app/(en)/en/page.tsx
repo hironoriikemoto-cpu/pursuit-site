@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import Image from "next/image";
 import ArticleCard from "@/components/ArticleCard";
+import DemoVideoSection from "@/components/DemoVideoSection";
 import SectionHeading from "@/components/SectionHeading";
 import { getArticles, toEnArticle } from "@/lib/microcms";
 
@@ -105,6 +106,9 @@ export default async function EnHome() {
           </div>
         </div>
       </section>
+
+      {/* Movie / Demo */}
+      <DemoVideoSection locale="en" />
 
       {/* Dual Leadership */}
       <section className="border-b border-neutral-200 bg-neutral-50">

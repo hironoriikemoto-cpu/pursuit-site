@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 const topics = [
   { value: "sovereignty", label: "Enterprise AI基盤 / Pursuit of Sovereignty" },
+  { value: "document", label: "資料請求（会社案内・サービス資料）" },
   { value: "new-business", label: "新規事業 / 事業化支援" },
   { value: "ai", label: "AI開発 / 生成AI活用" },
   { value: "system", label: "業務システム開発 / 再設計" },
