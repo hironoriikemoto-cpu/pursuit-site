@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Pursuit inc.",
   },
   description:
-    "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。Enterprise AI基盤「Pursuit Sovereignty」／AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。株式会社Pursuit。",
+    "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。Enterprise AI基盤「Pursuit of Sovereignty」／AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。株式会社Pursuit。",
   openGraph: {
     type: "website",
     locale: "ja_JP",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Pursuit inc.",
     title: "Pursuit inc. | 価値を追求し、守る",
     description:
-      "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。Enterprise AI基盤「Pursuit Sovereignty」／AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。",
+      "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。Enterprise AI基盤「Pursuit of Sovereignty」／AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。",
     images: [{ url: "/ogp.png", width: 1200, height: 630 }],
   },
   twitter: {
@@ -60,7 +60,7 @@ const organizationJsonLd = {
     { "@type": "Person", name: "江口 天", jobTitle: "共同代表 / Engineering & AI" },
   ],
   description:
-    "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。Enterprise AI基盤「Pursuit Sovereignty」／AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。",
+    "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。Enterprise AI基盤「Pursuit of Sovereignty」／AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。",
 };
 
 export default function RootLayout({

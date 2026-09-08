@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const topics = [
-  { value: "sovereignty", label: "Enterprise AI / Pursuit Sovereignty" },
+  { value: "sovereignty", label: "Enterprise AI / Pursuit of Sovereignty" },
   { value: "new-business", label: "New business / commercialization support" },
   { value: "ai", label: "AI development / generative AI adoption" },
   { value: "system", label: "Business system development / redesign" },

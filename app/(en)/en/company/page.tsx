@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
   title: "Company",
   description:
-    "Company profile of Pursuit inc. Founded February 5, 2026. Enterprise AI platform Pursuit Sovereignty, AI development, business systems, web applications, business design, and RWA token development.",
+    "Company profile of Pursuit inc. Founded February 5, 2026. Enterprise AI platform Pursuit of Sovereignty, AI development, business systems, web applications, business design, and RWA token development.",
   alternates: {
     canonical: "/en/company",
     languages: { ja: "/company", en: "/en/company" },
@@ -21,7 +21,7 @@ const overview = [
 ];
 
 const businesses = [
-  "Development and provision of the enterprise AI platform \"Pursuit Sovereignty\" (knowledge structuring, AI evaluation, continuous improvement)",
+  "Development and provision of the enterprise AI platform \"Pursuit of Sovereignty\" (knowledge structuring, AI evaluation, continuous improvement)",
   "AI development / AI adoption support",
   "Business system development (requirements, design, development, improvement)",
   "Web application development (planning, design, development, operation)",

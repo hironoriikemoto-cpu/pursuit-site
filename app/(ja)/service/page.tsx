@@ -5,14 +5,14 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Service",
   description:
-    "Enterprise AI基盤（Pursuit Sovereignty）、AI開発・活用支援、業務システム開発、Webアプリ開発、構想設計・伴走支援。構想を「作って終わり」にしない。運用・改善・定着までを前提に、価値を実装します。",
+    "Enterprise AI基盤（Pursuit of Sovereignty）、AI開発・活用支援、業務システム開発、Webアプリ開発、構想設計・伴走支援。構想を「作って終わり」にしない。運用・改善・定着までを前提に、価値を実装します。",
   alternates: { canonical: "/service", languages: { ja: "/service", en: "/en/service" } },
 };
 
 const services: { en: string; ja: string; body: string; href?: string }[] = [
   {
     en: "Enterprise AI Sovereignty",
-    ja: "企業AI基盤の構築（Pursuit Sovereignty）",
+    ja: "企業AI基盤の構築（Pursuit of Sovereignty）",
     body: "自社Knowledge×AI評価×継続改善のサイクルを企業内に構築するEnterprise AI基盤。Enterprise PoC（実データでのベースライン測定→評価→改善）からご一緒します。",
     href: "/sovereignty",
   },
@@ -70,7 +70,7 @@ export default function ServicePage() {
                     href={s.href}
                     className="mt-4 inline-block text-sm font-semibold text-emerald-900 underline decoration-emerald-200 underline-offset-4 hover:decoration-emerald-900"
                   >
-                    Pursuit Sovereigntyの詳細へ →
+                    Pursuit of Sovereigntyの詳細へ →
                   </Link>
                 )}
               </div>

@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Pursuit Sovereignty | Enterprise AI Sovereignty Platform",
+  title: "Pursuit of Sovereignty | Enterprise AI Sovereignty Platform",
   description:
-    "From using AI to growing it. Pursuit Sovereignty is an enterprise AI platform that feeds your knowledge to AI (KNOW), lets AI judge its own output (JUDGE), and continuously improves from those evaluations (IMPROVE).",
+    "From using AI to growing it. Pursuit of Sovereignty is an enterprise AI platform that feeds your knowledge to AI (KNOW), lets AI judge its own output (JUDGE), and continuously improves from those evaluations (IMPROVE).",
   alternates: {
     canonical: "/en/sovereignty",
     languages: { ja: "/sovereignty", en: "/en/sovereignty" },
@@ -62,7 +62,7 @@ export default function EnSovereigntyPage() {
             ENTERPRISE AI SOVEREIGNTY PLATFORM
           </p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight md:text-5xl">
-            Pursuit Sovereignty
+            Pursuit of Sovereignty
           </h1>
           <p className="mt-6 text-xl font-semibold leading-snug md:text-2xl">
             From using AI to growing it.
@@ -71,7 +71,7 @@ export default function EnSovereigntyPage() {
             Own Your Knowledge. Judge Your AI. Improve Continuously.
           </p>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-emerald-50 md:text-lg">
-            Pursuit Sovereignty is an enterprise AI platform that feeds your company&apos;s
+            Pursuit of Sovereignty is an enterprise AI platform that feeds your company&apos;s
             unique knowledge to AI, has the AI evaluate the quality of its own output, and
             continuously improves it from those evaluations. The goal: a shift from
             &ldquo;AI that ends at deployment&rdquo; to &ldquo;AI that adapts to your
@@ -164,7 +164,7 @@ export default function EnSovereigntyPage() {
               </p>
             </div>
             <div className="rounded-2xl border-2 border-emerald-900 bg-white p-6 shadow-sm md:p-8">
-              <h3 className="text-sm font-semibold tracking-wide text-emerald-900">Pursuit Sovereignty</h3>
+              <h3 className="text-sm font-semibold tracking-wide text-emerald-900">Pursuit of Sovereignty</h3>
               <p className="mt-4 text-sm leading-loose text-neutral-800">
                 Your Knowledge → Your AI → Your Evaluation → Your Improvement ↺
               </p>

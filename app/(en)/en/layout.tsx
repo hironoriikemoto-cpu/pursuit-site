@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Pursuit inc.",
   },
   description:
-    "Pursuing value that has yet to take shape — and protecting the value that emerges. Enterprise AI platform Pursuit Sovereignty / AI development / business systems / web applications / business design / Web3 & RWA. Pursuit inc., Tokyo.",
+    "Pursuing value that has yet to take shape — and protecting the value that emerges. Enterprise AI platform Pursuit of Sovereignty / AI development / business systems / web applications / business design / Web3 & RWA. Pursuit inc., Tokyo.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Pursuit inc.",
     title: "Pursuit inc. | Pursue value. Protect value.",
     description:
-      "Pursuing value that has yet to take shape — and protecting the value that emerges. Enterprise AI platform Pursuit Sovereignty / AI development / business systems / web applications / business design / Web3 & RWA.",
+      "Pursuing value that has yet to take shape — and protecting the value that emerges. Enterprise AI platform Pursuit of Sovereignty / AI development / business systems / web applications / business design / Web3 & RWA.",
     images: [{ url: "/ogp.png", width: 1200, height: 630 }],
   },
   twitter: {
@@ -60,7 +60,7 @@ const organizationJsonLd = {
     { "@type": "Person", name: "Takashi Eguchi", jobTitle: "Co-CEO / Engineering & AI" },
   ],
   description:
-    "Pursuing value that has yet to take shape — and protecting the value that emerges. Enterprise AI platform Pursuit Sovereignty / AI development / business systems / web applications / business design / Web3 & RWA.",
+    "Pursuing value that has yet to take shape — and protecting the value that emerges. Enterprise AI platform Pursuit of Sovereignty / AI development / business systems / web applications / business design / Web3 & RWA.",
 };
 
 export default function EnRootLayout({

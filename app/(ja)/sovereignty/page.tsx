@@ -3,9 +3,9 @@ import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Pursuit Sovereignty | Enterprise AI Sovereignty Platform",
+  title: "Pursuit of Sovereignty | Enterprise AI Sovereignty Platform",
   description:
-    "企業のAIを「使うもの」から「育てるもの」へ。Pursuit Sovereigntyは、企業独自のKnowledgeをAIに与え（KNOW）、AI自身に品質を評価させ（JUDGE）、評価結果から継続的に改善する（IMPROVE）ためのEnterprise AI基盤です。",
+    "企業のAIを「使うもの」から「育てるもの」へ。Pursuit of Sovereigntyは、企業独自のKnowledgeをAIに与え（KNOW）、AI自身に品質を評価させ（JUDGE）、評価結果から継続的に改善する（IMPROVE）ためのEnterprise AI基盤です。",
   alternates: { canonical: "/sovereignty", languages: { ja: "/sovereignty", en: "/en/sovereignty" } },
 };
 
@@ -59,7 +59,7 @@ export default function SovereigntyPage() {
             ENTERPRISE AI SOVEREIGNTY PLATFORM
           </p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight md:text-5xl">
-            Pursuit Sovereignty
+            Pursuit of Sovereignty
           </h1>
           <p className="mt-6 text-xl font-semibold leading-snug md:text-2xl">
             企業のAIを「使うもの」から「育てるもの」へ。
@@ -68,7 +68,7 @@ export default function SovereigntyPage() {
             Own Your Knowledge. Judge Your AI. Improve Continuously.
           </p>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-emerald-50 md:text-lg">
-            Pursuit Sovereigntyは、企業独自のKnowledgeをAIに与え、AI自身にその品質を評価させ、
+            Pursuit of Sovereigntyは、企業独自のKnowledgeをAIに与え、AI自身にその品質を評価させ、
             その評価結果からAIを継続的に改善していくためのEnterprise AI基盤です。
             目指すのは「導入して終わるAI」から「使い続けるほど企業固有の業務に適応するAI」への転換です。
           </p>
@@ -159,7 +159,7 @@ export default function SovereigntyPage() {
               </p>
             </div>
             <div className="rounded-2xl border-2 border-emerald-900 bg-white p-6 shadow-sm md:p-8">
-              <h3 className="text-sm font-semibold tracking-wide text-emerald-900">Pursuit Sovereignty</h3>
+              <h3 className="text-sm font-semibold tracking-wide text-emerald-900">Pursuit of Sovereignty</h3>
               <p className="mt-4 text-sm leading-loose text-neutral-800">
                 Your Knowledge → Your AI → Your Evaluation → Your Improvement ↺
               </p>

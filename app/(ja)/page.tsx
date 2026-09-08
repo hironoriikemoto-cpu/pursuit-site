@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 import ArticleCard from "@/components/ArticleCard";
 import SectionHeading from "@/components/SectionHeading";
@@ -7,7 +7,7 @@ import { getArticles } from "@/lib/microcms";
 export const revalidate = 60;
 
 const domains = [
-  { title: "Enterprise AI", body: "AIを「使う」から「育てる」へ — Pursuit Sovereignty" },
+  { title: "Enterprise AI", body: "AIを「使う」から「育てる」へ — Pursuit of Sovereignty" },
   { title: "AI / System", body: "設計から実装・定着まで" },
   { title: "Business Design", body: "構想を事業として成立へ" },
 ];
@@ -167,14 +167,14 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Pursuit Sovereignty */}
+      {/* Pursuit of Sovereignty */}
       <section className="border-b border-neutral-200 bg-emerald-950 text-white">
         <div className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 md:py-20">
           <p className="text-sm font-medium tracking-wide text-emerald-300">
             Flagship Product — Enterprise AI Sovereignty Platform
           </p>
           <h2 className="mt-2 text-2xl font-semibold leading-snug md:text-3xl">
-            Pursuit Sovereignty
+            Pursuit of Sovereignty
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-emerald-50">
             企業のAIを「使うもの」から「育てるもの」へ。自社のKnowledgeをAIに与え（KNOW）、
@@ -186,7 +186,7 @@ export default async function Home() {
               href="/sovereignty"
               className="inline-block rounded-xl bg-white px-6 py-3 text-sm font-semibold text-emerald-950 shadow-sm transition hover:opacity-90"
             >
-              Pursuit Sovereigntyを見る
+              Pursuit of Sovereigntyを見る
             </Link>
             <span className="rounded-xl border border-emerald-400/50 px-6 py-3 text-sm font-semibold text-emerald-200">
               デモサイト 近日公開

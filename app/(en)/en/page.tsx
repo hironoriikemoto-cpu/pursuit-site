@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 import ArticleCard from "@/components/ArticleCard";
 import SectionHeading from "@/components/SectionHeading";
@@ -7,7 +7,7 @@ import { getArticles, toEnArticle } from "@/lib/microcms";
 export const revalidate = 60;
 
 const domains = [
-  { title: "Enterprise AI", body: "From using AI to growing it — Pursuit Sovereignty" },
+  { title: "Enterprise AI", body: "From using AI to growing it — Pursuit of Sovereignty" },
   { title: "AI / System", body: "From design to implementation and adoption" },
   { title: "Business Design", body: "Turning concepts into viable businesses" },
 ];
@@ -171,14 +171,14 @@ export default async function EnHome() {
         </div>
       </section>
 
-      {/* Pursuit Sovereignty */}
+      {/* Pursuit of Sovereignty */}
       <section className="border-b border-neutral-200 bg-emerald-950 text-white">
         <div className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 md:py-20">
           <p className="text-sm font-medium tracking-wide text-emerald-300">
             Flagship Product — Enterprise AI Sovereignty Platform
           </p>
           <h2 className="mt-2 text-2xl font-semibold leading-snug md:text-3xl">
-            Pursuit Sovereignty
+            Pursuit of Sovereignty
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-emerald-50">
             From using AI to growing it. Feed your enterprise knowledge to AI (KNOW),
@@ -191,7 +191,7 @@ export default async function EnHome() {
               href="/en/sovereignty"
               className="inline-block rounded-xl bg-white px-6 py-3 text-sm font-semibold text-emerald-950 shadow-sm transition hover:opacity-90"
             >
-              Explore Pursuit Sovereignty
+              Explore Pursuit of Sovereignty
             </Link>
             <span className="rounded-xl border border-emerald-400/50 px-6 py-3 text-sm font-semibold text-emerald-200">
               Demo coming soon

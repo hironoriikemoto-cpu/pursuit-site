@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
   title: "Service",
   description:
-    "Enterprise AI platform (Pursuit Sovereignty), AI development, business systems, web applications, and business design & hands-on support. We never stop at 'build and done' — we implement value with operation, improvement, and adoption in mind.",
+    "Enterprise AI platform (Pursuit of Sovereignty), AI development, business systems, web applications, and business design & hands-on support. We never stop at 'build and done' — we implement value with operation, improvement, and adoption in mind.",
   alternates: {
     canonical: "/en/service",
     languages: { ja: "/service", en: "/en/service" },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const services: { en: string; ja: string; body: string; href?: string }[] = [
   {
     en: "Enterprise AI Sovereignty",
-    ja: "Enterprise AI platform (Pursuit Sovereignty)",
+    ja: "Enterprise AI platform (Pursuit of Sovereignty)",
     body: "An enterprise AI platform that builds the cycle of your knowledge × AI evaluation × continuous improvement inside your company. We start together from an enterprise PoC — baseline measurement, evaluation, and improvement on your real data.",
     href: "/en/sovereignty",
   },
@@ -71,7 +71,7 @@ export default function EnServicePage() {
                     href={s.href}
                     className="mt-4 inline-block text-sm font-semibold text-emerald-900 underline decoration-emerald-200 underline-offset-4 hover:decoration-emerald-900"
                   >
-                    Explore Pursuit Sovereignty →
+                    Explore Pursuit of Sovereignty →
                   </Link>
                 )}
               </div>
