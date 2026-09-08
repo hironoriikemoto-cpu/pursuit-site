@@ -76,7 +76,10 @@ export default async function Home() {
           </h1>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 md:text-lg">
             Pursuitは、未定義で不確かな領域に踏み込み、価値を見出し、一過性の流行で終わらせることなく、
-            社会に定着する&ldquo;本質的な価値&rdquo;として育て、支え、守り抜くための会社です。
+            社会に定着する&ldquo;本質的な価値&rdquo;として育て、支え、守り抜く。
+            その先に見ているのは、誰もが自らの価値を証明し、育て、掌握できる——
+            <strong>主権（Sovereignty）のある社会</strong>です。
+            私たちは主権の追求を軸に、新しい社会をつくる挑戦を支援し続けます。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link

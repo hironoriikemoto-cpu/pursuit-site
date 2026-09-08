@@ -80,7 +80,10 @@ export default async function EnHome() {
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 md:text-lg">
             Pursuit steps into undefined, uncertain territory to discover value — and
             nurtures, supports, and protects it as essential value that takes root in
-            society, rather than letting it end as a passing trend.
+            society. What we see beyond that is a{" "}
+            <strong>society of sovereignty</strong>: one where everyone can prove, grow,
+            and own the value they create. Through the pursuit of sovereignty, we will
+            keep empowering those who build the new society.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
