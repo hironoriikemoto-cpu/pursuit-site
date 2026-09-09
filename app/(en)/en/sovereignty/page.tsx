@@ -195,6 +195,14 @@ export default function EnSovereigntyPage() {
             >
               Request early access
             </Link>
+            <a
+              href="https://www.youtube.com/watch?v=tmWrhQR50TI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl border border-neutral-300 bg-white px-6 py-3 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50"
+            >
+              Watch the overview video ▶
+            </a>
           </div>
         </div>
       </section>
