@@ -2,6 +2,7 @@
 import Image from "next/image";
 import ArticleCard from "@/components/ArticleCard";
 import DemoVideoSection from "@/components/DemoVideoSection";
+import NoteSection from "@/components/NoteSection";
 import SectionHeading from "@/components/SectionHeading";
 import { getArticles } from "@/lib/microcms";
 
@@ -232,6 +233,9 @@ export default async function Home() {
             </section>
           )
       )}
+
+      {/* note */}
+      <NoteSection />
 
       {/* CTA */}
       <section>

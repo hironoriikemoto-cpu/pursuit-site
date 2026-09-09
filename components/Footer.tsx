@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import Image from "next/image";
+import { noteUrl } from "@/lib/site-config";
 
 const footerNav = [
   { path: "/concept", label: "Concept" },
@@ -39,6 +40,16 @@ export default function Footer({ locale = "ja" }: { locale?: "ja" | "en" }) {
                 {item.label}
               </Link>
             ))}
+            {noteUrl && (
+              <a
+                href={noteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-neutral-900"
+              >
+                note ↗
+              </a>
+            )}
           </nav>
         </div>
         <p className="mt-10 text-xs text-neutral-500">
