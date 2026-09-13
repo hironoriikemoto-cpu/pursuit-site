@@ -20,6 +20,8 @@ const overview = [
 const businesses = [
   "Enterprise AI基盤「Pursuit of Sovereignty」の開発・提供（Knowledge構造化・AI評価・継続改善）",
   "AI開発／AI活用支援",
+  "AIアドバイザリ（技術顧問）",
+  "カスタムトレーニング（企業ごとにカスタマイズしたAI・ナレッジ研修の提供）",
   "業務システム開発（要件整理・設計・開発・改善）",
   "Webアプリ開発（企画・設計・開発・運用）",
   "構想設計・伴走支援（新規事業・プロダクト設計）",

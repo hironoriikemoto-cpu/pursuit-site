@@ -16,6 +16,7 @@ const topics = [
   { value: "document", label: "Request for materials (company / service overview)" },
   { value: "new-business", label: "New business / commercialization support" },
   { value: "ai", label: "AI development / generative AI adoption" },
+  { value: "advisory", label: "AI advisory / corporate training" },
   { value: "system", label: "Business system development / redesign" },
   { value: "webapp", label: "Web application development" },
   { value: "web3", label: "Web3 / RWA (proving, protecting, passing on value)" },

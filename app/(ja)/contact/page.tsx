@@ -14,6 +14,7 @@ const topics = [
   { value: "document", label: "資料請求（会社案内・サービス資料）" },
   { value: "new-business", label: "新規事業 / 事業化支援" },
   { value: "ai", label: "AI開発 / 生成AI活用" },
+  { value: "advisory", label: "AIアドバイザリ / 企業研修（カスタムトレーニング）" },
   { value: "system", label: "業務システム開発 / 再設計" },
   { value: "webapp", label: "Webアプリ開発" },
   { value: "web3", label: "Web3 / RWA（価値証明・保護・継承）" },

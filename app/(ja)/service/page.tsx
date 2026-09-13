@@ -5,7 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Service",
   description:
-    "Enterprise AI基盤（Pursuit of Sovereignty）、AI開発・活用支援、業務システム開発、Webアプリ開発、構想設計・伴走支援。構想を「作って終わり」にしない。運用・改善・定着までを前提に、価値を実装します。",
+    "Enterprise AI基盤（Pursuit of Sovereignty）、AI開発・活用支援、AIアドバイザリ（技術顧問）、カスタムトレーニング（企業研修）、業務システム開発、Webアプリ開発、構想設計・伴走支援。構想を「作って終わり」にしない。運用・改善・定着までを前提に、価値を実装します。",
   alternates: { canonical: "/service", languages: { ja: "/service", en: "/en/service" } },
 };
 
@@ -20,6 +20,16 @@ const services: { en: string; ja: string; body: string; href?: string }[] = [
     en: "AI Development",
     ja: "AI開発・活用支援",
     body: "生成AI・業務AIの企画／設計／開発、業務プロセスへの組み込み・自動化、PoCから本実装への移行支援。",
+  },
+  {
+    en: "AI Advisory",
+    ja: "AIアドバイザリ（技術顧問）",
+    body: "経営と開発の意思決定に伴走する技術顧問サービス。AI戦略の策定、技術選定・アーキテクチャのレビュー、開発チームへの助言まで、外部AI顧問として継続的に支援します。",
+  },
+  {
+    en: "Custom Training",
+    ja: "カスタムトレーニング（企業研修）",
+    body: "ナレッジ管理、vibe coding（AIとの対話による開発）など、特定テーマを企業ごとの業務・課題に合わせてカスタマイズした研修プログラム。オンライン・対面のどちらでも提供します。",
   },
   {
     en: "System Development",

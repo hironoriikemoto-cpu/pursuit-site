@@ -23,6 +23,8 @@ const overview = [
 const businesses = [
   "Development and provision of the enterprise AI platform \"Pursuit of Sovereignty\" (knowledge structuring, AI evaluation, continuous improvement)",
   "AI development / AI adoption support",
+  "AI advisory (technical advisory for enterprises)",
+  "Custom corporate training (AI and knowledge programs tailored to each company)",
   "Business system development (requirements, design, development, improvement)",
   "Web application development (planning, design, development, operation)",
   "Business design & hands-on support (new business and product design)",

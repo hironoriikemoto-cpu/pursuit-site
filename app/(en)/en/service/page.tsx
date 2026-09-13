@@ -5,7 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Service",
   description:
-    "Enterprise AI platform (Pursuit of Sovereignty), AI development, business systems, web applications, and business design & hands-on support. We never stop at 'build and done' — we implement value with operation, improvement, and adoption in mind.",
+    "Enterprise AI platform (Pursuit of Sovereignty), AI development, AI advisory, custom corporate training, business systems, web applications, and business design & hands-on support. We never stop at 'build and done' — we implement value with operation, improvement, and adoption in mind.",
   alternates: {
     canonical: "/en/service",
     languages: { ja: "/service", en: "/en/service" },
@@ -23,6 +23,16 @@ const services: { en: string; ja: string; body: string; href?: string }[] = [
     en: "AI Development",
     ja: "AI development & adoption support",
     body: "Planning, design, and development of generative and business AI; integration and automation within business processes; and support for moving from PoC to full production.",
+  },
+  {
+    en: "AI Advisory",
+    ja: "Technical advisory",
+    body: "An ongoing advisory service for management and engineering decisions — AI strategy, technology selection and architecture reviews, and hands-on guidance for development teams, acting as your external AI advisor.",
+  },
+  {
+    en: "Custom Training",
+    ja: "Corporate training",
+    body: "Training programs customized to each company's business and challenges, on themes such as knowledge management and vibe coding (AI-collaborative development). Delivered online or on-site.",
   },
   {
     en: "System Development",

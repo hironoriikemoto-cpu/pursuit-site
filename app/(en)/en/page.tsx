@@ -167,7 +167,7 @@ export default async function EnHome() {
           <SectionHeading
             eyebrow="Business / Service"
             title="Design value. Implement it. Make it stick."
-            description="AI development / business systems / web applications / business design & hands-on support."
+            description="AI development / AI advisory / corporate training / business systems / web applications / business design & hands-on support."
           />
           <Link
             href="/en/service"

@@ -164,7 +164,7 @@ export default async function Home() {
           <SectionHeading
             eyebrow="Business / Service"
             title="価値を、設計し、実装し、定着させる。"
-            description="AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援。"
+            description="AI開発／AIアドバイザリ／企業研修／業務システム開発／Webアプリ開発／構想設計・伴走支援。"
           />
           <Link
             href="/service"
