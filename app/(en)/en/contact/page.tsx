@@ -43,6 +43,7 @@ export default function EnContactPage() {
           method="POST"
         >
           <input type="hidden" name="_subject" value="【Pursuit inc.】Inquiry from website (EN)" />
+          <input type="hidden" name="_cc" value="hironoriikemoto@pursuit-dao.com" />
           <input type="text" style={{ display: "none" }} name="_honey" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="https://pursuit-dao.com/en/contact/thanks" />

@@ -40,6 +40,7 @@ export default function ContactPage() {
           method="POST"
         >
           <input type="hidden" name="_subject" value="【Pursuit inc.】Webサイトからのお問い合わせ" />
+          <input type="hidden" name="_cc" value="hironoriikemoto@pursuit-dao.com" />
           <input type="text" style={{ display: "none" }} name="_honey" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="https://pursuit-dao.com/contact/thanks" />
