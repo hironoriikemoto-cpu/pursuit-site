@@ -71,15 +71,15 @@ export default async function Home() {
             価値を追求し、守る。
           </p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight md:text-5xl">
-            まだ形になっていない価値を、追求し続ける。
+            主権（Sovereignty）のある社会を、
             <br className="hidden md:block" />
-            そして、生まれた価値を、守る。
+            つくる。
           </h1>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 md:text-lg">
-            Pursuitは、未定義で不確かな領域に踏み込み、価値を見出し、一過性の流行で終わらせることなく、
-            社会に定着する&ldquo;本質的な価値&rdquo;として育て、支え、守り抜く。
-            その先に見ているのは、誰もが自らの価値を証明し、育て、掌握できる——
-            <strong>主権（Sovereignty）のある社会</strong>です。
+            まだ形になっていない価値を、追求し続ける。そして、生まれた価値を、守る。
+            ——その先にPursuitが見ているのは、誰もが自らの価値を証明し、育て、掌握できる
+            <strong>「主権のある社会」</strong>です。
+            AIも、知識も、価値の証明も、それを生み出した人の手に。
             私たちは主権の追求を軸に、新しい社会をつくる挑戦を支援し続けます。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

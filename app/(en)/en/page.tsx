@@ -73,17 +73,17 @@ export default async function EnHome() {
             Pursue value. Protect value.
           </p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight md:text-5xl">
-            Keep pursuing value that has yet to take shape.
+            Building a society
             <br className="hidden md:block" />
-            And protect the value that emerges.
+            of sovereignty.
           </h1>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 md:text-lg">
-            Pursuit steps into undefined, uncertain territory to discover value — and
-            nurtures, supports, and protects it as essential value that takes root in
-            society. What we see beyond that is a{" "}
-            <strong>society of sovereignty</strong>: one where everyone can prove, grow,
-            and own the value they create. Through the pursuit of sovereignty, we will
-            keep empowering those who build the new society.
+            Keep pursuing value that has yet to take shape. And protect the value that
+            emerges. Beyond that, Pursuit sees a{" "}
+            <strong>society of sovereignty</strong> — where everyone can prove, grow, and
+            own the value they create. AI, knowledge, and proof of value, in the hands of
+            those who make them. Through the pursuit of sovereignty, we keep empowering
+            those who build the new society.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
