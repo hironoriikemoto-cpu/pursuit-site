@@ -1,6 +1,6 @@
 ﻿import Link from "next/link";
 import Image from "next/image";
-import { noteUrl } from "@/lib/site-config";
+import { noteUrl, xUrl, instagramUrl } from "@/lib/site-config";
 
 const footerNav = [
   { path: "/concept", label: "Concept" },
@@ -48,6 +48,16 @@ export default function Footer({ locale = "ja" }: { locale?: "ja" | "en" }) {
                 className="hover:text-neutral-900"
               >
                 note ↗
+              </a>
+            )}
+            {xUrl && (
+              <a href={xUrl} target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900">
+                X ↗
+              </a>
+            )}
+            {instagramUrl && (
+              <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900">
+                Instagram ↗
               </a>
             )}
           </nav>

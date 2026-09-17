@@ -1,4 +1,4 @@
-// サイト全体の設定値
+﻿// サイト全体の設定値
 
 // デモ・解説動画のYouTube埋め込みURL。
 // 動画公開後に "https://www.youtube.com/embed/XXXXXXXX" を設定すると
@@ -9,3 +9,7 @@ export const demoVideoUrl: string | null =
 // 公式noteのURL（例: "https://note.com/pursuit_dao"）。
 // 設定するとトップに「noteの最新記事」セクションが表示され、フッターにリンクが追加される。
 export const noteUrl: string | null = "https://note.com/pursuit_inc";
+
+// 公式SNS（設定するとフッターにリンク表示）
+export const xUrl: string | null = "https://x.com/Pursuit0205";
+export const instagramUrl: string | null = "https://www.instagram.com/pursuit0205/";

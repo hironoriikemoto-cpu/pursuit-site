@@ -49,6 +49,11 @@ const organizationJsonLd = {
   url: `${siteUrl}/en`,
   logo: `${siteUrl}/logo/pursuit_logo_horizontal_color.svg`,
   foundingDate: "2026-02-05",
+  sameAs: [
+    "https://note.com/pursuit_inc",
+    "https://x.com/Pursuit0205",
+    "https://www.instagram.com/pursuit0205/",
+  ],
   address: {
     "@type": "PostalAddress",
     addressCountry: "JP",
