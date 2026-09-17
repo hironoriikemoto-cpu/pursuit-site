@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Pursuit inc.",
   },
   description:
-    "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。Enterprise AI基盤「Pursuit of Sovereignty」／AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。株式会社Pursuit。",
+    "まだ形になっていない価値を追求し続けること。そして、生まれた価値を守ること。Enterprise AI基盤「Pursuit of Sovereignty」／AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／Web3・RWA。株式会社Pursuit（パシュート）。",
   openGraph: {
     type: "website",
     locale: "ja_JP",
@@ -45,7 +45,7 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "株式会社Pursuit",
-  alternateName: "Pursuit inc.",
+  alternateName: ["Pursuit inc.", "パシュート", "株式会社パシュート"],
   url: siteUrl,
   logo: `${siteUrl}/logo/pursuit_logo_horizontal_color.svg`,
   foundingDate: "2026-02-05",

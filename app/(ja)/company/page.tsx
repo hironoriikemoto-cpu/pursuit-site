@@ -4,12 +4,12 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Company",
   description:
-    "株式会社Pursuit（Pursuit inc.）の会社概要。2026年2月5日設立。AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／RWAトークン領域での新規プロダクト開発。",
+    "株式会社Pursuit（パシュート／Pursuit inc.）の会社概要。2026年2月5日設立。AI開発／業務システム開発／Webアプリ開発／構想設計・伴走支援／RWAトークン領域での新規プロダクト開発。",
   alternates: { canonical: "/company", languages: { ja: "/company", en: "/en/company" } },
 };
 
 const overview = [
-  { label: "会社名", value: "株式会社Pursuit（Pursuit inc.）" },
+  { label: "会社名", value: "株式会社Pursuit（パシュート／Pursuit inc.）" },
   { label: "設立日", value: "2026年2月5日" },
   { label: "本店所在地", value: "東京都中央区銀座一丁目12番4号 N&E BLD.6階" },
   { label: "代表取締役", value: "池本 博則" },
